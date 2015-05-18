@@ -1,9 +1,10 @@
 = Serial interface to the mesh
 
 This example demonstrates external mesh control via SPI. The serial interface is based on the nRF8001 SPI interface, with new mesh opcodes.  This allows you to operate an Arduino or other IC along with an nRF51 dev kit in the mesh, making it easier to create mesh applications. This can also allow combining the mesh with an Internet gateway node or other applications.
+The nRF51-DK is the SPI slave.
 
 == About
-The example allows the use of an Arduino board as a ble-bcast-mesh node. The Arduino board can be used to inject messages into the mesh. This example uses an Arduino or Arduino clone board and the nRF51-DK board as a shield.
+The example allows the use of an Arduino board as a ble-bcast-mesh node. The Arduino is the SPI master. The Arduino board can be used to inject messages into the mesh. This example uses an Arduino or Arduino clone board and the nRF51-DK board as a shield.
 
 The nRF51-DK board is converted to an Arduino shield. The nRF51-DK board is then plugged into the Arduino board as a shield.
 
